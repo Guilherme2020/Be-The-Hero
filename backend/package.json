@@ -1,0 +1,19 @@
+{
+  "name": "BeTheHero",
+  "version": "1.0.0",
+  "description": "a backend application of donation for animal institution",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "Guilherme Rodrigues",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "knex": "^0.20.13",
+    "nodemon": "^2.0.2"
+  }
+}
