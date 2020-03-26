@@ -1,21 +1,21 @@
 const express = require("express");
-const crypto = require("crypto");
-const connection = require("./database/connection");
+const OngController = require("./controllers/OngController");
+const IncidentController = require("./controllers/IncidentController");
+const ProfileController = require("./controllers/ProfileController");
+const SessionController = require("./controllers/SessionController");
+
 const routes = express.Router();
 
-routes.get("/", (request, response) => {
-  return response.json({
-    evento: "Semana Omnistack 11.0",
-    aluno: "Diego Fernandes"
-  });
-});
-routes.post("/ongs", (request, response) => {
-  const { name, email, whatsapp, city, uf } = request.body;
-  const id = crypto.randomBytes(4).toString("HEX");
+routes.post("/sessions", SessionController.create);
 
-  return response.json({ name, email, whatsapp, city, uf });
-});
+routes.get("/ongs", OngController.index);
+routes.post("/ongs", OngController.create);
+routes.get("/profile", ProfileController.index);
+routes.get("/incidents", IncidentController.index);
+routes.post("/incidents", IncidentController.create);
+routes.delete("/incidents/:id", IncidentController.delete);
 module.exports = routes;
+
 /**
   Rota /recurso
 **/
