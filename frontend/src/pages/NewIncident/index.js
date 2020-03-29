@@ -11,6 +11,7 @@ export default function NewIncident() {
   const [value, setValue] = useState("");
   const ongId = localStorage.getItem("ongId");
   const history = useHistory();
+
   async function handleNewIncident(e) {
     e.preventDefault();
 
@@ -50,17 +51,17 @@ export default function NewIncident() {
           <input
             placeholder="Titulo do Caso"
             value={title}
-            onChange={e => setTitle(event.target.value)}
+            onChange={event => setTitle(event.target.value)}
           />
           <textarea
             placeholder="Descrição"
             value={description}
-            onChange={e => setDescription(event.target.value)}
+            onChange={event => setDescription(event.target.value)}
           />
           <input
             placeholder="Valor em reais"
             value={value}
-            onChange={e => setValue(event.target.value)}
+            onChange={event => setValue(event.target.value)}
           />
 
           <button className="button" type="submit">
