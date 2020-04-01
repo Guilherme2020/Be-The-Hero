@@ -1,11 +1,11 @@
 <h1 align="center">
-  <img src="https://i.imgur.com/O04nWsz.png" alt="Omnistack 10" width="700">
+  <img src="https://i.imgur.com/O04nWsz.png" alt="Omnistack 11" width="700">
 <br>
 <br>
 Omnistack 11 - Be The Hero
 </h1>
 
-<p align="center"> 🚀 Be The Hero: Aplicação desenvolvida na 10° semana da Ominstack feito pela Rocketseat.
+<p align="center"> 🚀 Be The Hero: Aplicação desenvolvida na 11° semana da Ominstack feito pela Rocketseat.
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">

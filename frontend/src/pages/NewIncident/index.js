@@ -20,6 +20,7 @@ export default function NewIncident() {
       description,
       value
     };
+
     try {
       await api.post("incidents", data, {
         headers: {
@@ -31,6 +32,7 @@ export default function NewIncident() {
       alert("Erro ao cadastrar o caso, tente novamente");
     }
   }
+  
   return (
     <div className="new-incident-container">
       <div className="content">
