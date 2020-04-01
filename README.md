@@ -13,6 +13,12 @@ Omnistack 11 - Be The Hero
   </a>
 </p>
 
+<p>
+  <a>
+    <img src="./screenshots/bethehero.png" alt="SreenShot">
+  </a>
+</p>
+
 ## Features
 
 - ⚛️ **React Js** — Lib JavaScript para construção de interfaces
